@@ -1,0 +1,94 @@
+.section-aside {
+    display: flex;
+    flex-direction: column;
+    width: $asidewidth;
+    &-top {
+        position: relative;
+        min-height: $asidetopheight;
+        width: 100%;
+        padding: 24px 15px 12px 15px;
+        background-image: url("../img/asidebg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        &-profile {
+            width: 64px;
+            height: 64px;
+            border-radius: 100%;
+        }
+        h1, p {
+            color: rgba($color: $white, $alpha: .87);
+            font-size: 14px;
+            line-height: 16px;
+        }
+        h1 {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            margin: 15px 5px 0px 5px;
+        }
+        p {
+            font-family: 'Roboto Lt';
+            font-style: normal;
+            font-weight: 300;
+            margin: 4px 5px 0px 5px;
+        }
+        &-details {
+            position: absolute;
+            right: 20px;
+            bottom: 25px;
+        }
+    }
+    &-description {
+        height: 100%;
+        border-right: 1px solid $asideborder;
+        background-color: $white;
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        ul {
+            list-style-type: none;
+            padding: 0 24px 0 24px;
+            margin: 20px 0;
+            li {
+                display: flex;
+                align-items: center;
+                .list-icon-container {
+                    width: 20px;
+                    height: 20px;
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        margin: auto;
+                    }
+                }
+                a {
+                    padding-left: 30px;
+                    font-family: 'Roboto';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: $asidelistfontsize;
+                    &:link,
+                    &:visited,
+                    &:hover,
+                    &:active {
+                        text-decoration: none;
+                        color: $textblack;
+                    }
+                    &.active {
+                        color: $linkvisited;
+                    }
+                }
+                &:not(:last-of-type) {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        hr {
+            margin: 0;
+            border-top: 1px solid $hr;
+        }
+        &::-webkit-scrollbar { 
+            display: none;
+        }
+    }
+}
