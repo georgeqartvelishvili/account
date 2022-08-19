@@ -326,6 +326,18 @@ body {
 .section-main-screen-contactdetails-profiledetails .profiledetails-iconcontainer img {
   margin: auto;
 }
+.section-main-screen-contactdetails-profiledetails .profiledetails-iconcontainer .call {
+  width: 18px;
+  height: 18px;
+}
+.section-main-screen-contactdetails-profiledetails .profiledetails-iconcontainer .email {
+  width: 20px;
+  height: 16px;
+}
+.section-main-screen-contactdetails-profiledetails .profiledetails-iconcontainer .place {
+  width: 14px;
+  height: 20px;
+}
 .section-main-screen-contactdetails-profiledetails .profiledetails-details {
   margin-left: 25px;
 }
@@ -381,4 +393,6 @@ body {
 }
 .section-main-screen .contact img {
   margin: auto;
+  width: 18px;
+  height: 18px;
 }/*# sourceMappingURL=main.css.map */
